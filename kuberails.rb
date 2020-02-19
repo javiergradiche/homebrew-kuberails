@@ -42,7 +42,7 @@ class Kuberails < Thor
     exec "kubectl exec -it #{pod_name} ./bin/rails c"
   end
 
-  desc "object -e ENVIRONMENT", "Get flota pods for environment"
+  desc "object -e ENVIRONMENT", "Get flota object for environment"
   option :n, :banner => 'NAVIGABLE', :required => false
   def object(object_name, pod_name=nil)
     k8_object(object_name, pod_name)
