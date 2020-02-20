@@ -1,3 +1,0 @@
-#!/bin/bash
-echo "running kuberails"
-ruby kuberails.rb "$@"

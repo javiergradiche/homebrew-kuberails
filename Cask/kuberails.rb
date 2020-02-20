@@ -9,19 +9,6 @@ cask 'kuberails' do
 
   depends_on macos: '>= :mojave'
   depends_on formula: "csshx"
-  
-  stage_only
-  
-  preflight do
-    system_command 'bundle install'
-  end
 
-  postflight do
-    system_command 'bundle install'
-  end
-
-  zap delete: [
-    '~/bin/kuberails.rb',
-    '~/bin/kuberails'
-  ]
+  #TODO: Complete cask instalation using builded versions for l64 & osx.
 end
