@@ -14,7 +14,7 @@ docker-compose run kuberails /bin/sh
 
 # Usage 
 ```
-# add builded to your bin folder
+# add executable to your bin folder
 cp ./bin/osx/kura ~/bin/
 kura --help #get help
 kura pods -e prod #get all pods with prod in mame
