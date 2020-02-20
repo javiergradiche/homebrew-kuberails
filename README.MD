@@ -2,12 +2,13 @@
 ```
 # build docker image
 docker-compose build
+```
 
-# run generators
+# Generators
 ```
 docker-compose run kuberails /bin/sh
-rb2exe kuberails.rb --add=. --output=./bin/linux/kura --target=l64
-rb2exe kuberails.rb --add=. --output=./bin/osx/kura --target=osx
+> rb2exe kuberails.rb --add=. --output=./bin/linux/kura --target=l64
+> rb2exe kuberails.rb --add=. --output=./bin/osx/kura --target=osx
 ```
 #
 
